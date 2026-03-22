@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/URP-example/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/_App/Scenes/BasicTest.unity
     guid: 7b2280de9d2c1294ea0cb3fffaa21ba1
+  - enabled: 1
+    path: Assets/_App/Scenes/test.unity
+    guid: e4ad11e4cdf25514f901d83b831758eb
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 00f2184362d124548bbcd4e18e555644,
       type: 2}
