@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 113732158}
   - component: {fileID: 113732160}
   - component: {fileID: 113732161}
+  - component: {fileID: 113732162}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -249,6 +250,20 @@ MonoBehaviour:
   m_DefaultActionMap: ARTouchAction
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &113732162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113732155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d304f96bbeb1c64bbbceac5984b19b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placedPrefab: {fileID: 1934569588295450, guid: b34b6c8f1206a6844b983e23b9da0441,
+    type: 3}
 --- !u!1 &139510216
 GameObject:
   m_ObjectHideFlags: 0
