@@ -1,47 +1,28 @@
+// ScreenLog.cs
 using UnityEngine;
-
-class MyScript : MonoBehaviour
-
+using UnityEngine.UI;
+public class ScreenLog : MonoBehaviour
 {
-
-    public int number;
-
-    void Start()
-
+    public Text logText;
+    public static ScreenLog Instance { get; private set; }
+    void Awake()
     {
-
-        number = 10;
-
+        if (!Instance)
+            Instance = this;
     }
-
-    void Update()
-
+    private void Start()
     {
-
-        if (number >= 0)
-
-        {
-
-            Debug.Log("in MyScript Update, count = " + number);
-
-            DoSomething();
-
-            number -= 1; // reduce number by one
-
-        }
-
+        logText.text = "";
     }
-
-    private void DoSomething()
-
+    private void _log(string msg)
     {
-
-        Debug.Log("inside DoSomething");
-
-        number = -1; // accidently set number to minus-1
-
-        // other code¡K
-
+        if (logText)
+            logText.text += msg + "\n";
     }
-
+    public static void Log(string msg)
+    {
+        if (Instance)
+            Instance._log(msg);
+        Debug.Log(msg);
+    }
 }
