@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-public class PlaceObjectOnPlane2 : MonoBehaviour
+public class PlaceOptimize : MonoBehaviour
 
 {
     [SerializeField] GameObject placedPrefab2;
